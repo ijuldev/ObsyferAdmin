@@ -1,4 +1,28 @@
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 400;
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+// url("../fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-Light.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype"),
+// url("../fonts/Poppins/Poppins-Black.ttf") format("truetype");

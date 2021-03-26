@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.topbar {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: var(--z-fixed);
+  transition: 0.5s;
+  background-color: var(--darkest-color);
+  .topbar-toggle {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .topbar-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    .topbar-icon {
+      color: var(--secondary-color);
+      font-size: 1.25rem;
+      cursor: pointer;
+      margin-left: 0.75rem;
+      padding: 0.75rem;
+      border-radius: 50%;
+    }
+    .topbar-divider {
+      width: 1px;
+      height: 1.5rem;
+      background-color: var(--secondary-color);
+      margin: 0 1rem;
+    }
+    .topbar-user {
+      display: flex;
+      align-items: center;
+      span {
+        color: var(--secondary-color);
+        font-size: map-get($map: $fonts-size, $key: small);
+        margin-right: 0.5rem;
+      }
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

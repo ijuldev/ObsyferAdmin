@@ -101,3 +101,42 @@
     background-color: #{$value};
   }
 }
+
+.rotate-n-15 {
+  transform: rotate(-15deg);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(
+    to bottom,
+    var(--dark-color),
+    var(--darker-color)
+  );
+  box-shadow: 0 2px 10px rgba($color: var(--darkest-color), $alpha: 0.2);
+}
+.bg-dark-light {
+  background: linear-gradient(to bottom, var(--darkest-color), transparent) 20%;
+}
+
+.body-pd {
+  padding-left: calc(var(--sidebar-width) + 11.75rem + 1rem) !important;
+}
+
+.content {
+  color: var(--white-color);
+  padding: 0.25rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.card-more {
+  padding: 0.5rem 0.125rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  i {
+    font-size: 1.25rem;
+  }
+}

@@ -7,15 +7,188 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="assets/vendors/boxicons/css/boxicons.min.css">
     <!-- ObsyferAdmin CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
     <title>ObsyferAdmin - Dashboard</title>
 </head>
-<body>
-    <h1>Halo Dunia!</h1>
+<body id="bodyPd">
+    <!-- Header -->
+    <header class="topbar" id="topbar">
+        <div class="topbar-toggle">
+            <i class="bx bx-menu" id="topbarToggle"></i>
+        </div>
+        <div class="topbar-menu">
+            <i class="bx bxs-message-detail topbar-icon bg-gradient-dark"></i>
+            <i class="bx bxs-bell topbar-icon bg-gradient-dark"></i>
+            <span class="topbar-divider"></span>
+            <div class="topbar-user">
+                <span>Ijul</span>
+                <img src="assets/images/horikita.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav-logo">
+                    <i class="bx bxs-game brand-icon"></i>
+                    <span class="sidebar-brand">ObsyferAdmin</span>
+                </a>
+
+                <div class="nav-list">
+                    <a href="#" class="nav-link active">
+                        <i class="bx bx-grid-alt nav-icon"></i>
+                        <span class="nav-name">Dashboard</span>
+                    </a>
+                    <div href="#" class="nav-link collapse">
+                        <i class="bx bxs-component nav-icon"></i>
+                        <span class="nav-name">Components</span>
+                        <i class="bx bx-chevron-right collapse-toggle"></i>
+
+                        <ul class="collapse-menu">
+                            <a href="#" class="collapse-link">Button</a>
+                            <a href="#" class="collapse-link">Card</a>
+                        </ul>
+                    </div>
+                    <div href="#" class="nav-link collapse">
+                        <i class="bx bx-cog nav-icon"></i>
+                        <span class="nav-name">Utilities</span>
+                        <i class="bx bx-chevron-right collapse-toggle"></i>
+
+                        <ul class="collapse-menu">
+                            <a href="#" class="collapse-link">Button</a>
+                            <a href="#" class="collapse-link">Card</a>
+                        </ul>
+                    </div>
+                    <a href="#" class="nav-link">
+                        <i class="bx bx-line-chart nav-icon"></i>
+                        <span class="nav-name">Chart</span>
+                    </a>
+                    <div href="#" class="nav-link collapse">
+                        <i class="bx bx-folder-open nav-icon"></i>
+                        <span class="nav-name">Pages</span>
+                        <i class="bx bx-chevron-right collapse-toggle"></i>
+
+                        <ul class="collapse-menu">
+                            <a href="#" class="collapse-link">Button</a>
+                            <a href="#" class="collapse-link">Card</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav-link">
+                <i class="bx bx-log-out nav-icon"></i>
+                <span class="nav-name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card bg-gradient-dark py-2">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-uppercase mb-1 text-white">Earnings</div>
+                            <div class="h5 mb-0">Rp. 4000</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bx bx-line-chart card-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card bg-gradient-dark py-2">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-uppercase mb-1 text-white">Earnings</div>
+                            <div class="h5 mb-0">Rp. 4000</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bx bx-line-chart card-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card bg-gradient-dark py-2">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-uppercase mb-1 text-white">Earnings</div>
+                            <div class="h5 mb-0">Rp. 4000</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bx bx-line-chart card-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card bg-gradient-dark py-2">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-uppercase mb-1 text-white">Earnings</div>
+                            <div class="h5 mb-0">Rp. 4000</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bx bx-line-chart card-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8 col-lg-7 mb-4">
+                <div class="card bg-gradient-dark">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h5>Ini Chart</h5>
+                        <div class="card-more bg-dark-light">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-area">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste cupiditate fuga dolorum possimus vero sed odio modi quasi alias, esse ex eligendi voluptate perspiciatis temporibus placeat quibusdam tempore sint architecto?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 mb-4">
+                <div class="card bg-gradient-dark">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h5>Ini Chart Bulat</h5>
+                        <div class="card-more bg-dark-light">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-pie py-2"></div>
+                        <div class="mt-4 text-center small">
+                            <span class="mr-2">
+                                <i class="bx bxs-circle"></i>
+                                Parakan
+                            </span>
+                            <span class="mr-2">
+                                <i class="bx bxs-circle"></i>
+                                Parakan
+                            </span>
+                            <span class="mr-2">
+                                <i class="bx bxs-circle"></i>
+                                Parakan
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- Bootstrap JS -->
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>

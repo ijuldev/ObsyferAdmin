@@ -8,4 +8,8 @@
   @each $breakpoint, $value in $breakpoints {
     --breakpoint-#{$breakpoint}: #{$value};
   }
+
+  --header-height: 4.375rem;
+  --sidebar-width: 4rem;
+  --z-fixed: 100;
 }
