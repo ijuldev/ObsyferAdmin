@@ -119,7 +119,10 @@
 }
 
 .body-pd {
-  padding-left: calc(var(--sidebar-width) + 11.75rem + 1rem) !important;
+  padding-left: calc(var(--sidebar-width) + 1rem) !important;
+  @include mq(md) {
+    padding-left: calc(var(--sidebar-width) + 10.75rem) !important;
+  }
 }
 
 .content {
@@ -133,7 +136,7 @@
 }
 
 .card-more {
-  padding: 0.5rem 0.125rem;
+  padding: 0.5rem 0;
   border-radius: 1rem;
   cursor: pointer;
   i {

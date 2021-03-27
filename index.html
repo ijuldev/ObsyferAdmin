@@ -14,7 +14,7 @@
 
     <title>ObsyferAdmin - Dashboard</title>
 </head>
-<body id="bodyPd">
+<body id="bodyPd" class="">
     <!-- Header -->
     <header class="topbar" id="topbar">
         <div class="topbar-toggle">
@@ -45,40 +45,38 @@
                         <i class="bx bx-grid-alt nav-icon"></i>
                         <span class="nav-name">Dashboard</span>
                     </a>
-                    <div href="#" class="nav-link collapse">
+                    <a href="#" class="nav-link collapse" id="collapseComponents">
                         <i class="bx bxs-component nav-icon"></i>
                         <span class="nav-name">Components</span>
                         <i class="bx bx-chevron-right collapse-toggle"></i>
-
-                        <ul class="collapse-menu">
-                            <a href="#" class="collapse-link">Button</a>
-                            <a href="#" class="collapse-link">Card</a>
-                        </ul>
-                    </div>
-                    <div href="#" class="nav-link collapse">
+                    </a>
+                    <ul class="collapse-menu" id="collapseMenuComponents">
+                        <a href="" class="collapse-item">Button</a>
+                        <a href="" class="collapse-item">Card</a>
+                    </ul>
+                    <a href="#" class="nav-link collapse" id="collapseUtilities">
                         <i class="bx bx-cog nav-icon"></i>
                         <span class="nav-name">Utilities</span>
                         <i class="bx bx-chevron-right collapse-toggle"></i>
-
-                        <ul class="collapse-menu">
-                            <a href="#" class="collapse-link">Button</a>
-                            <a href="#" class="collapse-link">Card</a>
-                        </ul>
-                    </div>
+                    </a>
+                    <ul class="collapse-menu" id="collapseMenuUtilities">
+                        <a href="" class="collapse-item">Backgrounds</a>
+                        <a href="" class="collapse-item">Colors</a>
+                        <a href="" class="collapse-item">Fonts</a>
+                    </ul>
                     <a href="#" class="nav-link">
                         <i class="bx bx-line-chart nav-icon"></i>
                         <span class="nav-name">Chart</span>
                     </a>
-                    <div href="#" class="nav-link collapse">
+                    <a href="#" class="nav-link collapse" id="collapsePages">
                         <i class="bx bx-folder-open nav-icon"></i>
                         <span class="nav-name">Pages</span>
                         <i class="bx bx-chevron-right collapse-toggle"></i>
-
-                        <ul class="collapse-menu">
-                            <a href="#" class="collapse-link">Button</a>
-                            <a href="#" class="collapse-link">Card</a>
-                        </ul>
-                    </div>
+                    </a>
+                    <ul class="collapse-menu" id="collapseMenuPages">
+                        <a href="" class="collapse-item">Blank Page</a>
+                        <a href="" class="collapse-item">404 Page</a>
+                    </ul>
                 </div>
             </div>
 
@@ -195,5 +193,14 @@
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- Obsyfer JS -->
     <script src="assets/js/main.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Collapse for Nav Item Components
+        showCollapse('#collapseComponents', '#collapseMenuComponents')
+        // Collapse for Nav Item Utilities
+        showCollapse('#collapseUtilities', '#collapseMenuUtilities')
+        // Collapse for Nav Item Pages
+        showCollapse('#collapsePages', '#collapseMenuPages')
+    </script>
 </body>
 </html>

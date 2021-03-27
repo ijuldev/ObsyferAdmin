@@ -9,10 +9,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
   z-index: var(--z-fixed);
   transition: 0.5s;
   background-color: var(--darkest-color);
+  @include mq(md) {
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--sidebar-width) + 1rem);
+  }
   .topbar-toggle {
     color: var(--secondary-color);
     font-size: 1.5rem;
@@ -21,14 +25,16 @@
   .topbar-menu {
     display: flex;
     align-items: center;
-    margin-right: 1rem;
     .topbar-icon {
       color: var(--secondary-color);
-      font-size: 1.25rem;
+      font-size: 1rem;
       cursor: pointer;
       margin-left: 0.75rem;
-      padding: 0.75rem;
+      padding: 0.5rem;
       border-radius: 50%;
+      @include mq(md) {
+        font-size: 1.125rem;
+      }
     }
     .topbar-divider {
       width: 1px;
@@ -51,6 +57,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include mq(md) {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }

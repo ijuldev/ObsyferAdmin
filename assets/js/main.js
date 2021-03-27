@@ -6,8 +6,6 @@ const on = (event, el, value) => el.addEventListener(event, value);
 // variables
 // const 
 const navLink = elQSA('.nav-link')
-const collapseToogle = elQSA('.collapse-toggle')
-const collapse = elQSA('.collapse')
 
 // functions
 const showSidebar = (toggleId, sidebarId, bodyId, topbarId) => {
@@ -30,9 +28,16 @@ function navAction() {
     this.classList.add('active')
 }
 
-function dropdownEvent() {
-    this.classList.toggle('active')
-    this.nextElementSibling.classList.toggle('active')
+const showCollapse = (collapseId, collapseMenu) => {
+    const toggle = elQS(collapseId),
+    collapse = elQS(collapseMenu)
+
+    if(toggle && collapse) {
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('show')
+            collapse.classList.toggle('active')
+        })
+    }
 }
 // function dropdownEvent() {
 //     this.querySelector('.dropdown-menu').classList.toggle('active');
@@ -52,5 +57,4 @@ function load() {
 function eventListener() {
     showSidebar('#topbarToggle', '#sidebar', '#bodyPd', '#topbar')
     navLink.forEach(n => n.addEventListener('click', navAction))
-    collapseToogle.forEach(c => c.addEventListener('click', dropdownEvent))
 }
